@@ -1,0 +1,115 @@
+.sns-importprocess-width{
+	height: 10px;
+	width: 0;
+	background-color: #3cabda;
+
+	background-image: 
+		linear-gradient(
+		-45deg, 
+		rgba(255, 255, 255, 0.15) 25%, 
+		transparent 25%, transparent 50%, 
+		rgba(255, 255, 255, 0.15) 50%, 
+		rgba(255, 255, 255, 0.15) 75%, 
+		transparent 75%, 
+		transparent
+	);
+	background-image: 
+		-moz-linear-gradient(
+		-45deg, 
+		rgba(255, 255, 255, 0.15) 25%, 
+		transparent 25%, transparent 50%, 
+		rgba(255, 255, 255, 0.15) 50%, 
+		rgba(255, 255, 255, 0.15) 75%, 
+		transparent 75%, 
+		transparent
+	);
+	background-image: 
+		-webkit-linear-gradient(
+		-45deg, 
+		rgba(255, 255, 255, 0.15) 25%, 
+		transparent 25%, transparent 50%, 
+		rgba(255, 255, 255, 0.15) 50%, 
+		rgba(255, 255, 255, 0.15) 75%, 
+		transparent 75%, 
+		transparent
+	);
+	background-image: 
+		-o-linear-gradient(
+		-45deg, 
+		rgba(255, 255, 255, 0.15) 25%, 
+		transparent 25%, transparent 50%, 
+		rgba(255, 255, 255, 0.15) 50%, 
+		rgba(255, 255, 255, 0.15) 75%, 
+		transparent 75%, 
+		transparent
+	);
+	background-image: 
+		-ms-linear-gradient(
+		-45deg, 
+		rgba(255, 255, 255, 0.15) 25%, 
+		transparent 25%, transparent 50%, 
+		rgba(255, 255, 255, 0.15) 50%, 
+		rgba(255, 255, 255, 0.15) 75%, 
+		transparent 75%, 
+		transparent
+	);
+    background-size: 20px 20px;
+
+    -webkit-animation:move 3s linear infinite;
+    -moz-animation:move 3s linear infinite;
+    -ms-animation:move 3s linear infinite;
+    animation:move 3s linear infinite;
+}
+.sns-importprocess{
+	background-color: #ccc; margin: 10px 0 5px; display: none;
+}
+#sns_themeoptions-theme_data .redux-table-container{
+	display: none;
+}
+
+#sns-import-tablecontent{
+	margin-top: 40px;
+}
+#sns-import-tablecontent label{
+	text-transform: uppercase; font-weight: bold;
+}
+#sns-import-tablecontent ul{
+	margin: 10px 0 0 10px;
+}
+#sns-import-tablecontent ul li{
+	padding: 2px 0 2px 0
+}
+#sns-import-tablecontent ul li i{margin-right: 6px;}
+
+@-webkit-keyframes move{
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}    
+@-moz-keyframes move{
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}    
+@-ms-keyframes move{
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}    
+@keyframes move{
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}

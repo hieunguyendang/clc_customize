@@ -1,0 +1,14 @@
+.img-layout{
+	display: inline-block;width: 90px; height: 60px; border: 3px solid #efefef;
+	background: url('../../assets/img/admin/m.jpg') no-repeat left top; float: left; margin: 0 10px 10px 10px; cursor: pointer;
+}
+.img-layout.l-m{background-image: url('../../assets/img/admin/l-m.jpg');}
+.img-layout.m-r{background-image: url('../../assets/img/admin/m-r.jpg');}
+.img-layout.l-m-r{background-image: url('../../assets/img/admin/l-m-r.jpg');}
+.img-layout:hover{
+	border-color: #dedede;
+}
+.img-layout.active{
+	border-color: #999;
+}
+select.img-select{display: none;}

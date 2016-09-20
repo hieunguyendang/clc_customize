@@ -1,0 +1,112 @@
+.menu.ui-sortable .sns-megamenu-options p {
+	display: none;
+}
+.menu.ui-sortable .menu-item-depth-0  .sns-megamenu-options .field-megamenu-enable ,
+.menu.ui-sortable .sns-megamenu-options .field-megamenu-icon ,
+.menu.ui-sortable .menu-item-depth-1 .sns-megamenu-options .field-megamenu-hidetitle  {
+	display: block;
+}
+
+.sns-megamenu-options .sns-iconpicker{
+	margin-left: 5px !important;
+}
+.sns-megamenu-options .field-megamenu-icon i{padding: 6px 6px;}
+/* .sns-megamenu-options .field-megamenu-icon:hover i{border-color: #5b9dd9;} */
+.mega-icon-option {
+	width: 100%;
+	overflow: scroll!important;
+	display: block;
+	padding: 10px 0;
+	
+}
+
+.mega-icon-option i {
+	margin-right: -1px;
+	margin-top: -1px;
+	text-align: center;
+	vertical-align: middle!important;
+	height: 35px;
+	cursor: pointer;
+	line-height: 35px!important;
+	width: 35px;
+	border: 1px solid #d8d8d8;
+	background-color: #fefefe;
+	display: inline-block; margin: 2px;
+}
+.mega-icon-option i:hover {
+	color: #3498db;
+	background-color: #ddd
+}
+.mega-icon-option i.selected {
+	color: #3498db;
+}
+.sns-megamenu-options select{
+	width:100%;
+}
+/* mega description */
+.sns-info-container{
+	position: relative;
+    top: -2px;
+	background: #222;
+    background: #222 -moz-linear-gradient(top, rgba(255,255,255,.1) 0%, rgba(0,0,0,.1) 100%);
+    background: #222 -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.1)), color-stop(100%,rgba(0,0,0,.1)));
+    background: #222 -webkit-linear-gradient(top, rgba(255,255,255,.1) 0%,rgba(0,0,0,.1) 100%);
+    background: #222 -o-linear-gradient(top, rgba(255,255,255,.1) 0%,rgba(0,0,0,.1) 100%);
+    background: #222 -ms-linear-gradient(top, rgba(255,255,255,.1) 0%,rgba(0,0,0,.1) 100%);
+    background: #222 linear-gradient(top, rgba(255,255,255,.1) 0%,rgba(0,0,0,.1) 100%);
+    display: inline-block;
+    margin-left: 5px;
+    padding: 0px;
+    font-size: 8px;
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0px -1px 1px #000;
+    font-style: normal;
+}
+
+.sns-info-container .sns-info{
+	opacity: 0;
+	visibility: hidden;
+    position: absolute;
+    left: 120%;
+    top: -10px;
+    width: 300px;
+    padding: 10px;
+    font-weight: normal;
+    font-size: 11px;
+    text-align: left;
+    background: #111;
+    background: #111 -moz-linear-gradient(top, rgba(255,255,255,.1) 0%, rgba(0,0,0,.1) 100%);
+    background: #111 -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.1)), color-stop(100%,rgba(0,0,0,.1)));
+    background: #111 -webkit-linear-gradient(top, rgba(255,255,255,.1) 0%,rgba(0,0,0,.1) 100%);
+    background: #111 -o-linear-gradient(top, rgba(255,255,255,.1) 0%,rgba(0,0,0,.1) 100%);
+    background: #111 -ms-linear-gradient(top, rgba(255,255,255,.1) 0%,rgba(0,0,0,.1) 100%);
+    background: #111 linear-gradient(top, rgba(255,255,255,.1) 0%,rgba(0,0,0,.1) 100%);
+    color: #fff;
+    text-shadow: none;
+    border: 1px solid #000;
+    box-shadow: 0px 1px 1px rgba(255,255,255,.3);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+}
+.sns-info-container:hover{
+	z-index: 40;
+}
+
+.sns-info-container:hover .sns-info {
+    opacity: 1;
+	visibility: visible;
+}
+.hidden-el{display: none;}
+.none-hidden-el{display: inline-block;}
+.nav-menus-php .item-edit{
+    line-height: 50px;
+}

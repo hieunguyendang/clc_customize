@@ -1,0 +1,178 @@
+/***************************************************
+	scss file: assets/scss/theme/_toolbar_list.scss
+		+ Style for toolbar on listing page of WooCommerce
+****************************************************/
+.woocommerce-pagination {
+	margin: 0; text-align: right;
+	line-height:1;
+	> span{
+		height: 22px;
+		min-width: 22px; line-height:22px;
+		display: inline-block;
+    	vertical-align: top;
+	}
+	.page-numbers {
+		margin: 0px; list-style:none; padding: 0; display:inline-block;
+		li { display: inline;
+			> span, > a {
+				height: 22px;
+				min-width: 22px; line-height:22px;
+				text-align: center;
+				margin: 0 2px; float: left;
+				color: $color;display:inline-block;
+				&:focus,
+				&:hover,
+				&.current{
+					color: $color1;
+					.fa {
+						color:  $color1;
+					}
+				}
+			}
+
+			a.page-numbers{
+				min-width: 16px !important;
+				&.next{
+					text-align: right;
+				}
+				&.prev{
+					min-width: 22px !important;
+				}
+			}
+			.fa {
+				color: $color;
+				font-size: 1em;
+				height: 22px;
+				line-height: 22px;
+				text-align: center;
+				//width: 16px;
+				margin: 0 0 0 2px;
+			}
+			a.prev{
+				.fa{
+					margin: 0 2px 0 0;
+				}
+			}
+		}
+	}
+}
+
+.toolbar {
+	height: 50px;
+	margin: 0 0 10px;
+	padding: 0;
+	@include clearfix();
+	&.toolbar-top{
+		border-bottom: 1px solid $base-border-color;
+	}
+
+	& + .woocommerce-result-count{
+		@media(max-width: $screen-xs-max){
+				display: none;
+			}
+	}
+
+	&.toolbar-bottom{
+		padding-top: 14px;
+		border-top: 1px solid $base-border-color;
+		margin-bottom: 0px; position: relative;
+
+		.woocommerce-pagination {
+			margin-top: -4px;
+		}
+	}
+	.mode-view {
+		display: block;
+		float: left; padding: 0;
+		li {
+			@include inline-block;
+			&.display-title {
+				display: none;
+			}
+			float: left;
+			@include square(30px);
+			position: relative;
+			margin-right: 5px;
+			a {
+				display: block;
+				text-align: center;
+				border: 1px solid $base-border-color;
+				span{ display: none; }
+				i{
+					line-height: 30px;
+					font-size: 16px;
+				}
+				&.active{
+					background-color: $color1;
+					border: 1px solid $color1;
+					i{color: #FFF;}
+				}
+			}
+		}
+
+	}
+	// .nbrItemPage,
+	.woocommerce-ordering {
+		display: block;
+		float: right;
+		padding: 0 0 0 10px;
+		text-align: left;
+		height: 36px;
+		margin: 0 0;
+		@media (max-width: $screen-xs-max) {
+			& {
+				display: none;
+			}
+		}
+		label{margin: 0 5px 0 0;}
+		.orderby-wrap{
+			position: relative;
+			margin:0; padding: 0px;
+			@include transition(all 0.2 ease-in);
+			display: inline-block; line-height: 28px;
+			select.orderby{
+				border: none;
+				appearance: none;
+				-o-appearance: none;
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				padding: 0px 10px;
+				background:#FFF;
+				min-width: 170px;
+				border: 1px solid $base-border-color; height:28px; line-height: 28px;
+			}
+			&:hover,
+			&:focus{
+				border-color: #CCC;
+			}
+			&:before{
+				position: absolute; content: ''; height: 5px; width: 9px; right: 10px; top: 12px;
+				background: url(../img/ico-drop.png) no-repeat left top;
+			}
+		}
+	}
+	.nbrItemPage {
+		.select, .selector1 {
+			select {
+				width: 65px;
+			}
+		}
+	}
+	.woocommerce-result-count{
+		display: inline-block; margin:0; float: left; line-height: 1;
+		@media(max-width: $screen-xs-max){
+			display: none;
+		}
+	}
+	.woocommerce-pagination {
+		margin: 0;
+		height: 38px;
+		float: right;
+	}
+	.product-count {
+		display: none !important;
+	}
+	.showall {
+		display: none;
+	}
+}

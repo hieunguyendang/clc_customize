@@ -1,0 +1,41 @@
+/*--------------------------------------------------
+	[Project Info]
+	Project:		SNS Simen - MultiPurpose WooCommerce Wordpress Theme
+	Version:		1.6
+	Author:			snstheme
+	Last change: 	08/20/2016
+	-----
+	This file render from .scss files. To work with .scss files:
+	    - Please config Admin >> SNS Simen >> Advance >> SCSS Compile: Alway complile
+	    - Please follow some table contents bellow and go to that .scss files to edit/add styles for each section if you want.
+----------------------------------------------------*/
+
+@import "compass";
+
+// Bootstrap: Core variables and mixins
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+// Theme: Variables and Mixins
+@import "theme_variables";
+@import 'theme_mixin';
+
+// Woo
+@import 'woo/woocommerce';
+
+// Theme
+@import 'theme/_general';
+@import 'theme/_main';
+@import 'theme/_snsmenu';
+@import 'theme/_shortcodes';
+@import 'theme/_post';
+@import 'theme/_widgets';
+@import 'theme/_toolbar_list';
+@import 'theme/_product_list';
+@import 'theme/_product';
+@import 'theme/_cpanel';
+@import 'theme/_effects';
+
+// Mansory 
+@import 'theme/_blog_masonry';
+

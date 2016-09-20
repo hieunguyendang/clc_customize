@@ -1,0 +1,24 @@
+/*
+Theme Name: snssimen child
+Description: SNS Simen - MultiPurpose WooCommerce Wordpress Theme
+Author: snstheme
+Theme URI: http://snstheme.com
+Author URI: http://snstheme.com
+Version: 1.0
+Tags: blue, green, responsive-layout
+Template: snssimen
+Text-domain: snssimen
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+.product-custom-field-title{font-weight: bold;color: #666;}
+.wrap-custom-field{margin-top: -20px;}
+.woocommerce .widget_price_filter .price_slider_amount .price_label{font-size: 14px;}
+.widget_price_filter .ui-slider .ui-slider-handle {z-index:1 !important;}
+.woocommerce-ordering{z-index:0}
+#sns_menu .sns-mainnav-wrapper #sns_mainnav {float: left;max-width: 95%;}
+
+li.menu-item .item-post .item-preview{height:300px;}
+.item-preview a img {width:auto !important; margin: 0 auto;}
+.item-post .item-description{width: 90%;margin-left: 15px;text-align: justify;}

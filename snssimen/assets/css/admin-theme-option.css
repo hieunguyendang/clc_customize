@@ -1,0 +1,16 @@
+#sns_option-layouttype ul.redux-image-select li{
+	padding: 0 0 !important; margin: 0 10px !important;
+}
+.redux-container-image_select .redux-image-select img, 
+.redux-container-image_select .redux-image-select .tiles{
+	border-color: #efefef !important;
+	border-width: 3px !important;
+}
+.redux-container-image_select .redux-image-select img:hover, 
+.redux-container-image_select .redux-image-select .tiles:hover{
+	border-color: #dedede !important;
+}
+.admin-color-fresh .redux-container-image_select .redux-image-select-selected img, 
+.wp-customizer .redux-container-image_select .redux-image-select-selected img{
+	border-color: #999 !important;
+}
