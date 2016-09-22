@@ -82,10 +82,13 @@ class sns_Megamenu_Front extends Walker_Nav_Menu {
            $item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
            $item_output .= '</h4>';
            $item_output .= $args->after;
-           echo "222222222222222222222222222222222222222222222";
             if($item->object =='product_cat'){  
                 $cat =get_term($item->object_id);
-                $item_output .='<div class="item-post"><div class="item-description">'.$cat->description.'</div></div>';
+                echo
+                $item_output .='<div class="item-post">';
+                $item_output .='<div class="item-description">'.$cat->description.'</div>';
+                $item_output .= '<div class="item-preview"></div>';
+                $item_output .='</div>';
             }
             
         }

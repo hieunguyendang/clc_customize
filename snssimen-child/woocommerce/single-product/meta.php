@@ -36,9 +36,9 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
 
 	<?php endif; ?>
 	<?php
-		$language = get_the_terms( get_the_ID(),  "languages" );
-		if($language[0] != null){
-			echo '<span class="product-custom-field-title">Language:  </span>'.$language[0]->name;	
+		$languages = get_the_term_list( get_the_ID(), 'languages','',', ', '' );
+		if($languages != null){
+			echo '<span class="product-custom-field-title">Language:  </span>'.$languages;	
 			echo '<br>';
 		}									
 	?>
