@@ -11,6 +11,14 @@ Text-domain: snssimen
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
+
+/* Header */
+@media (max-width: 320px){
+#headerRightSearchForm{font-size: 11px;}
+#headerRightSearchForm select {padding-left: 5px !important;}
+}
+
+/* end */
 /* Single product */
 	.woocommerce .primary_block .images .woocommerce-main-image .zoomWrapper{margin: 0 auto;}
 	.woocommerce .primary_block .images .woocommerce-main-image .zoomWrapper img {position: initial !important;}
@@ -19,9 +27,23 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	.product-custom-field-title{font-weight: bold;color: #666;}
 	.wrap-custom-field{margin-top: -20px;}
 	.woocommerce .widget_price_filter .price_slider_amount .price_label{font-size: 14px;}
+.woocommerce-page.columns-1 ul.products li.product, .woocommerce.columns-1 ul.products li.product{width:90%!important;}
+.sns-product-tabs .product_list li .block-product-inner{width:90%!important;}
 
 /* end */
+.product-image img {height:250px !important;}
+
+@media (min-width: 760px){
+.product-image img {height:250px !important; width:100% !important;}
+}
+@media (max-width: 425px){
+.product-image img {height:250px !important; width:auto !important;}
+}
+@media (max-width: 760px){
+	.zoomWindowContainer{display: none;}
+}
 /* Fix mega menu: Hover sidebar*/
+.prdlist-content{padding-top:0px;}
 #left-menu-item-sidebar{display:none;}
 #bottom-menu-item-sidebar{display:none !important;}
 #sns_mainnav .menu-item:hover #left-menu-item-sidebar{display:block;}
@@ -30,7 +52,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 #left-menu-item-sidebar .product-shop,#bottom-menu-item-sidebar .product-shop {text-align: center;}
 #left-menu-item-sidebar .product-shop div[itemprop="description"],#bottom-menu-item-sidebar .product-shop div[itemprop="description"] {display: none;}
 #left-menu-item-sidebar .product-shop .actions-addtocart,#bottom-menu-item-sidebar .product-shop .actions-addtocart {display: none;}
-#left-menu-item-sidebar .item-img{padding-bottom: 10px; border: none !important;} 
+#left-menu-item-sidebar .item-img{ border: none !important;} 
 #bottom-menu-item-sidebar .product-name{margin-top: 20px;}
 #left-menu-item-sidebar .item-box-hover,#bottom-menu-item-sidebar .item-box-hover {display: none !important;}
 
@@ -46,7 +68,38 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 a.compare{border-right: none}
 
 /* end */
+#left-menu-item-sidebar .sidebar-menu-widget .products li{width:80% !important}
+#left-menu-item-sidebar .sidebar-menu-widget{width:80%;}
+#left-menu-item-sidebar .product-image{padding:0 !important;}
+#left-menu-item-sidebar .product-image img{width: 100% !important; height: auto;}
 
+/* Cart */
+.woocommerce table.shop_table td {padding: 1px !important;}
+/* end */
+
+/* sns mainnav */
+#sns_menu .sns-mainnav-wrapper #sns_mainnav{width: 100%; max-width: 100% !important;}
+
+/* responesive */
+
+
+@media (min-width: 720px){
+	.product_list.grid > li{float: none !important; display: inline-block; vertical-align: top;margin-right: -4px !important;}
+}
+@media (max-width: 720px){
+  	#snssimen_widget_icon_box-2{float:left;}
+	#snssimen_widget_icon_box-3{float:left;}
+	#snssimen_widget_icon_box-4{float:left;}
+	#snssimen_widget_icon_box-5{float:left;}
+}
+@media (max-width: 425px){
+	#sns_topheader .topheader-right .sns-quickaccess {margin-top: -96px;}
+}
+@media (max-width: 320px){
+	#sns_topheader .topheader-right .sns-quickaccess {margin-top: -135px;}
+}
+.open > .dropdown-menu{z-index:9999 !important;}
+/* end */
 
 .widget_price_filter .ui-slider .ui-slider-handle {z-index:1 !important;}
 .woocommerce-ordering{z-index:0}
@@ -57,23 +110,34 @@ li.menu-item .item-post .item-preview{height:300px;}
 .item-post .item-description{width: 90%;margin-left: 15px;text-align: justify;}
 .sub-content #bottom-menu-item-sidebar .sidebar-menu-widget{width:33%; padding: 0px 160px 0px 21px;}
 
-.product-image img {height:270px; width:auto !important;}
 
-#left-menu-item-sidebar .sidebar-menu-widget .products li{width:100% !important}
-#left-menu-item-sidebar .sidebar-menu-widget{width:90%;}
 #sns_content {overflow: inherit;}
 
 .sub-content .preview .item-post{ text-align: center;}
 
 .menu-product-cat-img { height: 250px !important; }
 
-@media (min-width: 768px){
-.product_list.grid > li{float: none; display: inline-block; vertical-align: top;margin-right: -4px !important;}
-}
+
 
 table.compare-list td img {width:auto !important; height:300px !important;}
 .DTFC_LeftWrapper{margin-top:114px}
 .woof_container_pa_product-special-condition{margin-left: -3.5px;}
 
 .product_list.grid .block-product-inner .item-info .info-inner .item-title {white-space: normal;}
+.woocommerce .primary_block .cart .single_add_to_cart_button{z-index:0 !important;}
 
+span.featured_product {z-index: 1;font-size: 11px;line-height: 1.3; top:14px;padding: 2px 40px;position: absolute;color: #fff; border-radius: 0;background: #f25601;right: -38px;left: auto;bottom: auto;-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg);text-transform: uppercase;}
+.onsale{display:none;}
+
+.sns_icon_box .sns_icon_content_right {padding-top: 15px;}
+
+/* Footer */
+#sns_footer_middle .widget h4 {white-space: inherit;}
+.chosen-container{margin-top: 3px;}
+.chosen-container-single .chosen-single{border-radius: 0px !important;height: 30px;}
+.chosen-container-single .chosen-single span{margin-top: 3px;}
+#sns_footer_middle .widget_product_search{padding-top: 50px !important;}
+
+/* end */
+.selectize-control{width: 70%;}
+.woof_products_top_panel{z-index: 0 !important;}

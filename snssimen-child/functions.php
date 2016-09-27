@@ -7,8 +7,26 @@ function snssimen_child_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'snssimen_child_enqueue_styles', 100000 );
 
+function snssimen_child_enqueue_scripts() {
+    wp_enqueue_style( 'style', get_stylesheet_directory_uri() . '/select2/select2.min.css' );
+    wp_enqueue_script( 'script', get_stylesheet_directory_uri() . '/select2/select2.min.js');
+}
+add_action( 'wp_enqueue_scripts', 'snssimen_child_enqueue_scripts', 100001 );
+
+function snssimen_child_enqueue_scripts_2() {
+    wp_enqueue_style( 'style2', get_stylesheet_directory_uri() . '/selectize/selectize.css' );
+    wp_enqueue_script( 'script2', get_stylesheet_directory_uri() . '/selectize/selectize.js');
+}
+add_action( 'wp_enqueue_scripts', 'snssimen_child_enqueue_scripts_2', 100002 );
+
+function snssimen_child_enqueue_scripts_3() {
+    wp_enqueue_style( 'style3', get_stylesheet_directory_uri() . '/chosen/prism.css' );
+    wp_enqueue_script( 'script3', get_stylesheet_directory_uri() . '/chosen/prism.js');
+}
+add_action( 'wp_enqueue_scripts', 'snssimen_child_enqueue_scripts_3', 100003 );
+
 // Add action to hook into the approp
-//add_filter( 'woocommerce_placeholder_img_src', 'growdev_custom_woocommerce_placeholder', 10 );
+add_filter( 'woocommerce_placeholder_img_src', 'growdev_custom_woocommerce_placeholder', 10 );
 /**
  * Function to return new placeholder image URL.
  */
@@ -82,13 +100,40 @@ if ( ! function_exists( 'snssimen_setup' ) ) {
     }
     add_action ( 'init', 'snssimen_setup' ); // or add_action( 'after_setup_theme', 'snssimen_setup' );
 }
-    register_sidebar(array(
-      'name' => esc_html__( 'Menu Sidebar #2','snssimen' ),
-      'id'   => 'menu_sidebar_2',
-      'description'   => esc_html__( 'These are widgets for Mega Menu Columns style. This sidebar displayed in the bottom of column.','snssimen' ),
-      'before_widget' => '<div class="sidebar-menu-widget col-md-6 %2$s">',
-      'after_widget'  => '</div>',
-      'before_title'  => '<h4 class="widget-title">',
-      'after_title'   => '</h4>'
-    ));
+register_sidebar(array(
+           'name' => esc_html__( 'Footer Widgets 1','snssimen' ),
+           'id'   => 'footer-widgets-1',
+            'description'   => esc_html__( 'These are widgets for the Footer.','snssimen' ),
+            'before_widget' => '<div id="%1$s" class="%2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h4>',
+            'after_title'   => '</h4>'
+        ));
+register_sidebar(array(
+           'name' => esc_html__( 'Footer Widgets 2','snssimen' ),
+           'id'   => 'footer-widgets-2',
+            'description'   => esc_html__( 'These are widgets for the Footer.','snssimen' ),
+            'before_widget' => '<div id="%1$s" class="%2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h4>',
+            'after_title'   => '</h4>'
+        ));
+register_sidebar(array(
+           'name' => esc_html__( 'Footer Widgets-3','snssimen' ),
+           'id'   => 'footer-widgets-3',
+            'description'   => esc_html__( 'These are widgets for the Footer.','snssimen' ),
+            'before_widget' => '<div id="%1$s" class="%2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h4>',
+            'after_title'   => '</h4>'
+        ));
+register_sidebar(array(
+           'name' => esc_html__( 'Footer Widgets-4','snssimen' ),
+           'id'   => 'footer-widgets-4',
+            'description'   => esc_html__( 'These are widgets for the Footer.','snssimen' ),
+            'before_widget' => '<div id="%1$s" class="%2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h4>',
+            'after_title'   => '</h4>'
+        ));
 ?>
